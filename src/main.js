@@ -29,6 +29,7 @@ form.addEventListener("submit", e => {
             message: 'Sorry, there are no images matching your search query. Please try again!',
             position: 'topRight'
           });
+          hideLoader();
         } else {
           createGallery(res.hits);
           hideLoader();
