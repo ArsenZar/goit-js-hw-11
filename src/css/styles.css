@@ -44,9 +44,67 @@ button {
   border-radius: 8px;
   margin-left: 8px;
 }
-
+.error{
+  text-align: center;
+  width: 100%;
+}
 .gallery{
   max-width: 1128px;
   width: 100%;
   margin: 0 auto;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.gallery-item{
+  width: calc(100% / 3 - 18px);
+  height: 200px;
+  background-image: url("../img/1.JPG");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  border: 1px solid black;
+}
+.gallery-item-info{
+  background-color: white;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+  box-sizing: border-box;
+}
+.gallery-item-info li{
+  text-align: center;
+  font-weight: 600;
+  font-size: 12px;
+}
+.gallery-item-info li>span{
+  font-weight: 400;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: #FF3D00;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  margin: 0 auto;
+}
+.hidden{
+  display: none;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
