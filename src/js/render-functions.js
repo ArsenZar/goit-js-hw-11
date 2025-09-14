@@ -19,7 +19,6 @@ export function createGallery(arrElem) {
       </a>
     `);
   });
-  console.log(htmlGallery);
   gallery.innerHTML = htmlGallery.join("");
   lightbox.refresh();
 }
